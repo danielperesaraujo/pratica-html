@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.column {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 30%;
+  min-height: 300px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.column h2 {
+  margin-top: 0;
+}
+
+.card {
+  background-color: #e0e0e0;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: grab;
+}

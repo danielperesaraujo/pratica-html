@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Kanban Simples</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Meu Quadro Kanban</h1>
+  <div class="kanban-board">
+    <div class="column" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2>A Fazer</h2>
+      <div class="card" draggable="true" ondragstart="drag(event)" id="card1">Estudar HTML</div>
+      <div class="card" draggable="true" ondragstart="drag(event)" id="card2">Criar CSS</div>
+    </div>
+
+    <div class="column" id="doing" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2>Em Progresso</h2>
+      <div class="card" draggable="true" ondragstart="drag(event)" id="card2">Criar js</div>
+    </div>
+
+    <div class="column" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2>Concluído</h2>
+      <div class="card" draggable="true" ondragstart="drag(event)" id="card2">Criar CSS</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
